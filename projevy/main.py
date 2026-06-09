@@ -8,12 +8,20 @@ print("Welcome,", username,", to your Storyline Revision Organizer.")
 
 print()
 
-print("With this guide, you'll be able to write about specific facts about the book you are reading.")
-print("In this, you can also write about your own thoughts and predictions about the story. This will help you keep track of your story and better your understanding.")
+print("With this guide, you'll be able to write specific facts about the book you are reading.")
+print("In this, you can also write about your own thoughts and predictions about the story. This will help you think back on your story and better your understanding.")
 
 # The list of things you can do
 
+print()
+print()
 
+print("Edit--This will allow you to write in the section you choose.")
+print("View--This allows you to view what you have written in whichever section you choose.")
+print("Clear--This will clear everything you have written, but only in the section of your choosing.")
+print("Clear All--This clears all your writing and starts you from the beginning.")
+
+MEnU = ["edit", "view", "clear all", "clear"]
 
 # Maybe a little picture
 
