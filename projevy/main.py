@@ -1,6 +1,6 @@
 # Welcome & Description of Project
 
-username = input("What should I call you?")
+username = input("What should I call you?   ")
 
 print()
 
@@ -25,10 +25,29 @@ MEnU = ["edit", "view", "clear all", "clear"]
 
 # Maybe a little picture
 
+
+
+
 # Finally, show list and ask user what they would like to do
 
-# What choosing edit leads to
+print()
+print()
 
+print("Edit")
+print("View")
+print("Clear")
+print("Clear All")
+
+print()
+
+print("What would you like to do?")
+
+choice = input(" ")
+
+# What choosing edit leads to
+''''''
+#if choice == "edit":
+''''''
 # Choices of what they can edit and how to end it
 
 # Option to view instead of edit
