@@ -43,12 +43,13 @@ print("What would you like to do?")
 
 choice = input(" ")
 
+choice = choice.lower()
+
 # What choosing edit leads to
 
 if choice == "edit":
     print("What would you like to edit?")
-    print("Choose a number between 0 and 22")
-    choice = input(" ")
+    print("Choose a number between 0 and 20(including '0')")
 
 # Choices of what they can edit and how to end it
 
@@ -56,87 +57,49 @@ print("Prompts:")
 
 print()
 
-print("1. Explain the title.")
+questions = ["1. Explain the title.", "2. What category or genre do you think it fits into?", "3. What do you think the author's purpose was?", "4. Something you liked about it.", "5. Something you disliked about it.", "6. Describe the setting.", "7. Which character did you like most?", "8. Which character did you like least?", "9. Describe one of the main characters.", "10. What changes does a main character go through?", "11. Describe one significant episode.", "12. What techniques does the author use to tell the story?", "13. How did reading it change you, or your views?", "14. What would you say to persuade a friend to read it or not to read it?", "15. Summarise it in one written sentence or a one minute speech.", "16. What feedback would you give the author?", "17. How might you have written it differently?", "18. What do you think of the ending?", "19. What happens, or should happen, after the ending?", "20. What would you want to read about in a sequel or prequel?"]
+
+answers = []
+
+while True:
+    choice2 = input("")
+    choice2 = choice2.isnumeric()
+    if choice2 == "True":
+        print(questions[choice2])
+        break
+    else:
+        print("Has to be a number! Here, try again!")
+
+
+
+# Make a spot for user to edit
+
+print("Begin writing below:")
+
+usersedit = input("")
+
+answers.append(usersedit)
 
 print()
 
-print("2. What category or genre do you think it fits into?")
+print(questions[choice2], answers)
 
-print()
+print("Would you like to quit?  Yes or No?")
 
-print("3. What do you think the author's purpose was?")
+choice1 = input("")
 
-print()
+choice1 = choice1.lower()
 
-print("4. Something you liked about it.")
+# if choice1 == "no":
+    
 
-print()
 
-print("5. Something you disliked about it.")
 
-print()
 
-print("6. Describe the setting.")
 
-print()
 
-print("7. Which character did you like most?")
 
-print()
 
-print("8. Which character did you like least?")
-
-print()
-
-print("9. Describe one of the main characters.")
-
-print()
-
-print("10. What changes does a main character go through?")
-
-print()
-
-print("11. Describe one significant episode.")
-
-print()
-
-print("12. What techniques does the author use to tell the story?")
-
-print()
-
-print("13. How did reading it change you, or your views?")
-
-print()
-
-print("14. What would you say to persuade a friend to read it or not to read it?")
-
-print()
-
-print("15. Summarise it in one written sentence or a one minute speech.")
-
-print()
-
-print("16. What feedback would you give the author?")
-
-print()
-
-print("17. How might you have written it differently?")
-
-print()
-
-print("18. What do you think of the ending?")
-
-print()
-
-print("19. What happens, or should happen, after the ending?")
-
-print()
-
-print("20. What would you want to read about in a sequel or prequel?")
-
-print()
-
-print("21. Choices of what they can view")
 
 # Clear option 
 
