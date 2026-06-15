@@ -8,7 +8,7 @@ print("Welcome,", username,", to your Storyline Revision Organizer.")
 
 print()
 
-print("With this guide, you'll be asked questions regarding the story you've read about. As you answer said questions")
+print("With this guide, you'll be asked questions regarding the story you've read about. As you answer said questions, it'll better your memory and understanding of what you've read.")
 
 # The list of things you can do
 
@@ -63,14 +63,11 @@ answers = []
 
 while True:
     choice2 = input("")
-    choice2 = choice2.isnumeric()
-    if choice2 == "True":
+    if choice2.isnumeric() == False:
+        print("Has to be a number! Here, try again!")
+    else:
         print(questions[choice2])
         break
-    else:
-        print("Has to be a number! Here, try again!")
-
-
 
 # Make a spot for user to edit
 
@@ -83,6 +80,8 @@ answers.append(usersedit)
 print()
 
 print(questions[choice2], answers)
+
+print("")
 
 print("Would you like to quit?  Yes or No?")
 
