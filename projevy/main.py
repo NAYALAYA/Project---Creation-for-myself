@@ -41,15 +41,20 @@ print()
 
 print("What would you like to do?")
 
-choice = input(" ")
+while True:
 
-choice = choice.lower()
+    choice = input(" ")
+
+    choice = choice.lower()
 
 # What choosing edit leads to
 
-if choice == "edit":
-    print("What would you like to edit?")
-    print("Choose a number between 0 and 20(including '0')")
+    if choice != "edit":
+        print("Not one of the options. Here, try again!")
+    else:
+        print("What would you like to edit?")
+        print("Choose a number between 0 and 20(including '0')")
+        break
 
 # Choices of what they can edit and how to end it
 
